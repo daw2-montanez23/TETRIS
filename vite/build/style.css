@@ -1,0 +1,68 @@
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+#title{
+  font-family: 'Oswald', sans-serif;
+  font-size: 100px;
+  box-sizing: border-box;
+	overflow: hidden;
+	box-shadow: 0 10px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 5s ease-in-out infinite;
+}
+body{
+  background-image: url("https://st2.depositphotos.com/1439706/5679/v/450/depositphotos_56794325-stock-illustration-dark-flat-tetris-background.jpg");
+  
+}
+#fondo_negro{
+  height: 600px;
+  margin-top: 100px;
+  animation: float 5s ease-in-out infinite;
+}
+#fondo_negro_principal{
+  height: 400px;
+  margin-top: 100px;
+  animation: float 5s ease-in-out infinite;
+}
+#fondo_blanco{
+  height: 425px;
+  margin-top: 100px;
+  animation: float 5s ease-in-out infinite;
+}
+#icono_anonimo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 230px;
+  width: 200px;
+  background-image: url("https://arlequin.mx/wp-content/uploads/2019/04/autor-desconocido.png");
+}
+
+a{
+  text-decoration: none;
+}
+#botones{
+  float: right;
+}
+table tr td{
+  color: white;
+  border: 1px solid white;
+  text-align: center;
+  font-weight: bold;
+}
+#pablo{
+  width: 300px;
+  height: 300px;
+}

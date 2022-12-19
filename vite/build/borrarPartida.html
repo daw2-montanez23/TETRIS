@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Rubik+Vinyl&display=swap"
+      rel="stylesheet"
+    />
+    <title>TETRIS</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Rubik+Vinyl&display=swap");
+    </style>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="datos" class="container_fluid">
+      <audio autoplay>
+        <source src="audio/mario.mp3" type="audio/mp3" />
+      </audio>
+      <header>
+        <div class="col-12 row">
+          <h1 id="title" class="d-flex justify-content-center text text-white">
+            TETRIS
+          </h1>
+        </div>
+        <div>
+          <hr />
+        </div>
+      </header>
+      <main>
+        <div class="row">
+          <div id="izquierda" class="col-3"></div>
+          <div class="col-6">
+            <div id="fondo_negro" class="col-12 row bg bg-dark">
+              <div class="row">
+                <h1
+                  class="fw-bold mt-5 d-flex justify-content-center text-white fs-4"
+                >
+                  SEGURO QUIERES BORRAR ESTA PARTIDA?
+                </h1>
+              </div>
+              <div class="d-flex justify-content-center">
+                <a href="VerBorrarPartidas.html"
+                  ><input class="btn btn-danger" type="submit" value="BORRAR"
+                /></a>
+              </div>
+              <div class="d-flex justify-content-center">
+                <a href="VerBorrarPartidas.html"
+                  ><input class="btn btn-danger" type="submit" value="VOLVER"
+                /></a>
+              </div>
+            </div>
+            <div id="derecha" class="col-3"></div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
